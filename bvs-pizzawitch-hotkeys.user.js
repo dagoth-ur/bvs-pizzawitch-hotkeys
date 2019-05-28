@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BvS Pizzawitch Hotkeys
 // @namespace    https://github.com/dagoth-ur/
-// @source       https://github.com/dagoth-ur/bvs-pizzawitch-hotkeys
+// @source       https://github.com/dagoth-ur/bvs-userscripts
 // @version      0.1
 // @description  Hotkeys for accelerating / braking / using cards.
 // @author       Chrobot
@@ -15,10 +15,6 @@
 
 (function() {
     'use strict';
-
-    function dbg(...msg) {
-        console.log(...msg);
-    }
 
     function $(selector, context=document) {
         return context.querySelector(selector);
@@ -52,6 +48,4 @@
     }
 
     window.addEventListener('keydown', onKeyDown, true);
-
-    Object.assign(window, { radioShift, $ });
 })();
